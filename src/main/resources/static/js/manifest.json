@@ -1,0 +1,15 @@
+{
+  "name": "Flutter",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "I Love Flutter ~~！",
+  "browser_action": {
+    "default_icon": "xiaobuding.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://localhost:8080/index*","http://www.csdn.net/*"],
+      "js": ["manifest.js"]
+    }
+  ]
+}
